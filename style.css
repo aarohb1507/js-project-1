@@ -10,6 +10,7 @@ html, body {
 }
 
 .container{
+  width:100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,27 +20,67 @@ html, body {
   color: #fff;
   background: linear-gradient(135deg, #cf9aff, #95c0ff);
   gap:20px;
-  
 }
 
-.button{
+.btn{
   display: flex;
-  width: 150px;
-  justify-content: center;
+  width: 210px;
+  justify-content:center;
+  gap: 20px;
   align-items: center;
   padding: 12px;
   height: 50px;
   border:none;
   border-radius: 20px;
-  background-color: bisque;
+  background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* Vertical gradient */
   color:#17325a;
   font-weight: bolder;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.button:hover {
-  background-color: #dbf3b2;
+.btn:hover {
+  background: linear-gradient(to bottom, #dbf3b2, #a8e063); /* Hover gradient */
   color: #17325a;
   transform: scale(1.05);
+}
+
+.edit{
+  width: 1.5rem;
+}
+
+.notes{
+  width: 3.5rem;
+}
+
+.main-text{
+  display: flex;
+  gap:1rem;
+}
+
+h1{
+  font-size: 2.3rem;
+}
+
+.input-box{
+  position: relative;
+  align-self:center;
+  width:500px;
+  background-color: #fff;
+  color:#333;
+  max-width:500px;
+  min-height: 150px;
+  padding: 20px;
+  margin: 20px 0;
+  margin-left: 20px; /* Shift rightward */
+  outline: none;
+  border-radius: 5px;
+}
+
+p img{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 25px;
+  cursor: pointer;
 }
